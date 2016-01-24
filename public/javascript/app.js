@@ -5,11 +5,19 @@
 
 	function Config($stateProvider, $urlRouterProvider, $urlMatcherFactoryProvider, $locationProvider) {
 		$stateProvider.state('Home',{
-			url: '/',
-			templateUrl: '/templates/home.html',
-      controller: 'HomeController as vm'
+			url: '/home',
+			templateUrl: '/templates/home.html'
+		}).state('About', {
+			url: '/about',
+			templateUrl: '/templates/about.html'
+		}).state('Contact', {
+			url: '/contact',
+			templateUrl: '/templates/contact.html'
+		}).state('Blog', {
+			url: '/blog',
+			templateUrl: '/templates/blog.html'
 		});
-		$urlRouterProvider.otherwise('/');
+		$urlRouterProvider.otherwise('/home');
 		$urlMatcherFactoryProvider.caseInsensitive(true);
 		$urlMatcherFactoryProvider.strictMode(false);
 		$locationProvider.html5Mode(true);
