@@ -16,6 +16,12 @@
 		}).state('Blog', {
 			url: '/blog',
 			templateUrl: '/templates/blog.html'
+		}).state('Invest', {
+			url: '/invest',
+			templateUrl: '/templates/invest.html'
+		}).state('Survey', {
+			url: '/survey',
+			templateUrl: '/templates/survey.html'
 		});
 		$urlRouterProvider.otherwise('/home');
 		$urlMatcherFactoryProvider.caseInsensitive(true);

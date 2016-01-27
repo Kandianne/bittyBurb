@@ -1,0 +1,89 @@
+$primary-color : #000;
+$secondary-color : #5ba63d;
+$accentStandOut-color: #e79d03;
+$accentStandOutTwo-color: #f6d727;
+$standard-color: #000;
+$nonStandout-color: #fff;
+
+//==================GRADIENT BACKGROUND VARIABLES===============================
+$safari-gradient: -webkit-linear-gradient(left, #237a2b, #5ba63d, #237a2b);
+$opera-gradient: -o-linear-gradient(right, #237a2b, #5ba63d, #237a2b);
+$firefox-gradient: -moz-linear-gradient(right, #237a2b, #5ba63d, #237a2b);
+$default-gradient: linear-gradient(to right, #237a2b, #5ba63d, #237a2b);
+
+//==============================MAIN============================================
+
+body, html {
+	color: $primary-color;
+	font-family: 'Merriweather Sans', sans-serif;
+	a {
+		text-decoration: none;
+	}
+	sup {
+	font-size: .3em;
+	}
+	h1, h5 {
+		text-align: center;
+	}
+	h5 {
+		margin-top: -1.6em;
+	}
+}
+
+
+
+.md-toolbar-tools {
+	background: black;
+}
+
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	p {
+		font-size: .7em;
+	}
+}
+//==============================HOME ABOUT============================================
+
+#aboutHome {
+	p {
+		margin: 1em auto;
+		width: 60%;
+	}
+}
+
+//==============================SURVEY PAGE============================================
+
+#survey {
+	h2, h3 {
+		text-align: center;
+	}
+	p {
+		margin: 1em auto;
+		width: 60%;
+	}
+	div {
+		text-align: center;
+		margin: auto;
+	}
+}
+
+//==============================CONTACT PAGE============================================
+
+#contact {
+	h2 {
+		text-align: center;
+	}
+	form {
+		width: 60%;
+		margin: auto;
+	}
+	div {
+		text-align: center;
+	}
+	.md-button {
+		margin: auto;
+		display: block;
+	}
+}

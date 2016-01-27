@@ -5,6 +5,6 @@
 
 	function HomeController() {
 		var vm = this;
-		vm.title = 'Welcome BittyBurbians!';
+		vm.title = 'Bittyburb';
 	}
 })();

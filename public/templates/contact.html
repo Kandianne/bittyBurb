@@ -1,0 +1,39 @@
+<div id="contact" ng-controller="ContactController as cf">
+	<h2>Get in Touch!</h2>
+	<div layout layout-align="center center" flex="60">
+		<p flex="20">
+			<i class="fa fa-phone"></i>&nbsp;(510) 833-5027
+		</p>
+		<p flex="20">
+			<i class="fa fa-envelope"></i>&nbsp;anthony@bittyburb.com
+		</p>
+		<p flex="20">
+			<i class="fa fa-question-circle"></i>&nbsp;Take our survey
+		</p>
+	</div>
+	<form>
+		<md-input-container>
+			<label>
+				Your Name
+			</label>
+			<input type="text" name="name" value="" data-ng-model="cf.contactName" required>
+		</md-input-container>
+		<md-input-container>
+		<label>
+			Message
+		</label>
+		<textarea type="text" name="name" value="" data-ng-model="cf.contactMessage" required></textarea>
+		</md-input-container>
+
+		<md-input-container>
+		<label>
+			Your Email
+		</label>
+		<input type="email" name="name" value="" data-ng-model="cf.contactEmail" required>
+		</md-input-container>
+
+		<md-button type="submit" ng-click="showSuccess" class="md-button">
+			Send Message
+		</md-button>
+	</form>
+</div>
