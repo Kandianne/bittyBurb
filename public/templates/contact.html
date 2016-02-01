@@ -1,17 +1,23 @@
 <div id="contact" ng-controller="ContactController as cf">
-	<h2>Get in Touch!</h2>
-	<div layout layout-align="center center" flex="60">
-		<p flex="20">
+	<h2>Just A Dream Without You</h2>
+	<p>“Hello, I’m Anthony ... Our team has the resources and expertize to make Bittyburb a wonderful community. But we don’t have what it takes to successfully plan this undertaking alone. An absolute requirement for Bittyburb’s success is knowing what you want in your tiny community. So if you want this community to succeed, please consider writing or calling me with any questions you might have, or to schedule an informational interview so I can pick your brain about your community ideals.”</p>
+	<div layout layout-align="center center" layout-sm="column" flex="60">
+		<p flex-sm="90" flex class="md-button">
 			<i class="fa fa-phone"></i>&nbsp;(510) 833-5027
 		</p>
-		<p flex="20">
+		<p flex-sm="90" flex>
 			<i class="fa fa-envelope"></i>&nbsp;anthony@bittyburb.com
 		</p>
-		<p flex="20">
-			<i class="fa fa-question-circle"></i>&nbsp;Take our survey
-		</p>
+		
+			<p flex-sm="90" flex class="md-button">
+			<a ng-href="https://www.surveymonkey.com/r/bittyburbsurvey">
+				<i class="fa fa-question-circle"></i>&nbsp;Take our survey
+			</a>
+			</p>
+		
 	</div>
-	<form>
+	<form class="md-whiteframe-6dp" data-ng-submit="cf.sendMail()">
+		<h3>Get In Touch..</h3>
 		<md-input-container>
 			<label>
 				Your Name
@@ -22,7 +28,7 @@
 		<label>
 			Message
 		</label>
-		<textarea type="text" name="name" value="" data-ng-model="cf.contactMessage" required></textarea>
+		<input type="text" name="name" value="" data-ng-model="cf.contactMessage" required>
 		</md-input-container>
 
 		<md-input-container>
@@ -32,7 +38,7 @@
 		<input type="email" name="name" value="" data-ng-model="cf.contactEmail" required>
 		</md-input-container>
 
-		<md-button type="submit" ng-click="showSuccess" class="md-button">
+		<md-button type="submit" ng-click="showSuccess" class="md-button md-raised">
 			Send Message
 		</md-button>
 	</form>

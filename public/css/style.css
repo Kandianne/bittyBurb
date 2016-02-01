@@ -62,15 +62,29 @@ footer p {
   text-align: center;
 }
 /* line 78, ../compass/sass/style.scss */
+#contact a {
+  color: black;
+}
+/* line 81, ../compass/sass/style.scss */
+#contact p {
+  width: 79%;
+  margin: 3em auto;
+}
+/* line 85, ../compass/sass/style.scss */
 #contact form {
   width: 60%;
-  margin: auto;
+  margin: 2em auto 6em auto;
+  padding: 1.6em;
 }
-/* line 82, ../compass/sass/style.scss */
+/* line 89, ../compass/sass/style.scss */
+#contact form h3 {
+  text-align: center;
+}
+/* line 93, ../compass/sass/style.scss */
 #contact div {
   text-align: center;
 }
-/* line 85, ../compass/sass/style.scss */
+/* line 96, ../compass/sass/style.scss */
 #contact .md-button {
   margin: auto;
   display: block;

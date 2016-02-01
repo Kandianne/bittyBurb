@@ -75,9 +75,20 @@ footer {
 	h2 {
 		text-align: center;
 	}
+	a {
+		color: black;
+	}
+	p {
+		width: 79%;
+		margin: 3em auto;
+	}
 	form {
 		width: 60%;
-		margin: auto;
+		margin: 2em auto 6em auto;
+		padding: 1.6em;
+		h3 {
+			text-align: center;
+		}
 	}
 	div {
 		text-align: center;
