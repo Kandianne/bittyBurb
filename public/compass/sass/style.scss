@@ -48,8 +48,19 @@ footer {
 	}
 }
 //==============================HOME ABOUT============================================
+#homeLogo {
+	text-align: center;
+	margin-top: 1.7em;
+	img {
+		width: 270px;
+	}
+}
 
 #aboutHome {
+	margin-bottom: 7em;
+	h1 {
+		margin-top: 10px;
+	}
 	p {
 		margin: 1em auto;
 		padding: 0 2em;
@@ -143,5 +154,12 @@ footer {
 			width: 100%;
 			font-size: 2em;
 		}
+	}
+}
+
+@media only screen and (max-width : 560px)
+{
+	footer p {
+		display: none;
 	}
 }
