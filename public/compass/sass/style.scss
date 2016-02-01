@@ -47,6 +47,14 @@ footer {
 		font-size: .7em;
 	}
 }
+
+//==============================NAVIGATION============================================
+
+#navLogo {
+	width: 30px;
+	margin: auto;
+}
+
 //==============================HOME ABOUT============================================
 #homeLogo {
 	text-align: center;
@@ -91,6 +99,14 @@ footer {
 	div {
 		text-align: center;
 		margin: auto;
+	}
+	i {
+		margin: .6em auto;
+		font-size: 3em;
+	}
+	.md-button {
+		padding: 0 2em;
+		font-weight: bold;
 	}
 }
 

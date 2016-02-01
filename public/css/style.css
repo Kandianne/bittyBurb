@@ -41,132 +41,148 @@ footer p {
   font-size: .7em;
 }
 
-/* line 51, ../compass/sass/style.scss */
+/* line 53, ../compass/sass/style.scss */
+#navLogo {
+  width: 30px;
+  margin: auto;
+}
+
+/* line 59, ../compass/sass/style.scss */
 #homeLogo {
   text-align: center;
   margin-top: 1.7em;
 }
-/* line 54, ../compass/sass/style.scss */
+/* line 62, ../compass/sass/style.scss */
 #homeLogo img {
   width: 270px;
 }
 
-/* line 59, ../compass/sass/style.scss */
+/* line 67, ../compass/sass/style.scss */
 #aboutHome {
   margin-bottom: 7em;
 }
-/* line 61, ../compass/sass/style.scss */
+/* line 69, ../compass/sass/style.scss */
 #aboutHome h1 {
   margin-top: 10px;
 }
-/* line 64, ../compass/sass/style.scss */
+/* line 72, ../compass/sass/style.scss */
 #aboutHome p {
   margin: 1em auto;
   padding: 0 2em;
 }
-/* line 68, ../compass/sass/style.scss */
+/* line 76, ../compass/sass/style.scss */
 #aboutHome a {
   font-weight: bold;
   color: black;
 }
 
-/* line 77, ../compass/sass/style.scss */
+/* line 85, ../compass/sass/style.scss */
 #survey h2, #survey h4 {
   text-align: center;
 }
-/* line 80, ../compass/sass/style.scss */
+/* line 88, ../compass/sass/style.scss */
 #survey h2 {
   margin: 2em auto 1em auto;
 }
-/* line 83, ../compass/sass/style.scss */
+/* line 91, ../compass/sass/style.scss */
 #survey p {
   margin: 1em auto;
   width: 60%;
 }
-/* line 87, ../compass/sass/style.scss */
+/* line 95, ../compass/sass/style.scss */
 #survey a {
   font-weight: bold;
   color: black;
 }
-/* line 91, ../compass/sass/style.scss */
+/* line 99, ../compass/sass/style.scss */
 #survey div {
   text-align: center;
   margin: auto;
 }
+/* line 103, ../compass/sass/style.scss */
+#survey i {
+  margin: .6em auto;
+  font-size: 3em;
+}
+/* line 107, ../compass/sass/style.scss */
+#survey .md-button {
+  padding: 0 2em;
+  font-weight: bold;
+}
 
-/* line 100, ../compass/sass/style.scss */
+/* line 116, ../compass/sass/style.scss */
 #contact h2 {
   text-align: center;
   margin: 2em auto 1em auto;
 }
-/* line 104, ../compass/sass/style.scss */
+/* line 120, ../compass/sass/style.scss */
 #contact a {
   color: black;
 }
-/* line 107, ../compass/sass/style.scss */
+/* line 123, ../compass/sass/style.scss */
 #contact p {
   width: 79%;
   margin: 3em auto;
 }
-/* line 111, ../compass/sass/style.scss */
+/* line 127, ../compass/sass/style.scss */
 #contact form {
   width: 60%;
   margin: 2em auto 6em auto;
   padding: 1.6em;
 }
-/* line 115, ../compass/sass/style.scss */
+/* line 131, ../compass/sass/style.scss */
 #contact form h3 {
   text-align: center;
 }
-/* line 119, ../compass/sass/style.scss */
+/* line 135, ../compass/sass/style.scss */
 #contact div {
   text-align: center;
 }
-/* line 122, ../compass/sass/style.scss */
+/* line 138, ../compass/sass/style.scss */
 #contact .md-button {
   margin: auto;
   display: block;
 }
 
-/* line 128, ../compass/sass/style.scss */
+/* line 144, ../compass/sass/style.scss */
 #mobileNav, #mobileNavToggle {
   display: none;
 }
 
 @media only screen and (max-width: 360px) {
-  /* line 135, ../compass/sass/style.scss */
+  /* line 151, ../compass/sass/style.scss */
   .regNav {
     display: none;
   }
 
-  /* line 138, ../compass/sass/style.scss */
+  /* line 154, ../compass/sass/style.scss */
   footer p {
     display: none;
   }
 
-  /* line 142, ../compass/sass/style.scss */
+  /* line 158, ../compass/sass/style.scss */
   #mobileNav {
     display: inherit;
   }
-  /* line 144, ../compass/sass/style.scss */
+  /* line 160, ../compass/sass/style.scss */
   #mobileNav .md-button {
     display: block;
     border: thin solid black;
   }
 
-  /* line 150, ../compass/sass/style.scss */
+  /* line 166, ../compass/sass/style.scss */
   #mobileNavToggle {
     display: inherit;
     text-align: center;
   }
-  /* line 153, ../compass/sass/style.scss */
+  /* line 169, ../compass/sass/style.scss */
   #mobileNavToggle i {
     width: 100%;
     font-size: 2em;
   }
 }
 @media only screen and (max-width: 560px) {
-  /* line 162, ../compass/sass/style.scss */
+  /* line 178, ../compass/sass/style.scss */
   footer p {
     display: none;
   }
