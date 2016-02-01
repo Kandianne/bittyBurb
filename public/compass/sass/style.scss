@@ -39,6 +39,10 @@ md-input-container label {
 	background: black;
 }
 
+.active {
+	border-bottom: 2px solid white; 
+}
+
 footer {
 	width: 100%;
 	position: fixed;
@@ -60,7 +64,7 @@ footer {
 	text-align: center;
 	margin-top: 1.7em;
 	img {
-		width: 270px;
+		width: 260px;
 	}
 }
 

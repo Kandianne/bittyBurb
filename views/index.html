@@ -9,7 +9,7 @@
 	<!-- <link rel="stylesheet" type="text/css" href="/css/site.css"> -->
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
-<body>
+<body ng-controller="HomeController">
 
 	<md-toolbar id="nav" layout class="md-whiteframe-7dp">
 			<div class="md-toolbar-tools">
@@ -17,20 +17,27 @@
 					<img id="navLogo" src="../images/bittyburb-logo-draft1-phu.png">
 				</a>
 				<div>
-					<md-button ui-sref="Home" class="md-button" aria-label="Bittyburb">
+					<a ng-href="/home">
+						<md-button class="md-button" aria-label="Bittyburb" ng-class="{ active: isCurrentPath('/home') }">
 						Bittyburb
-					</md-button>
+						</md-button>
+					</a>
 				</div>
 				<span flex></span>
 <!-- 				<md-button ui-sref="Home">
 					About
 				</md-button> -->
-				<md-button ui-sref="Survey" class="regNav">
+				<a ng-href="/survey">
+					<md-button ui-sref="Survey" class="regNav" ng-class="{ active: isCurrentPath('/survey') }">
 					Survey
-				</md-button>
-				<md-button ui-sref="Contact" class="regNav">
+					</md-button>
+				</a>
+				
+				<a ng-href="/contact">
+					<md-button ui-sref="Contact" class="regNav" ng-class="{ active: isCurrentPath('/contact') }">
 					Contact
-				</md-button>
+					</md-button>
+				</a>
 				<md-button id="mobileNavToggle" class="md-button-icon" aria-label="Mobile Nav" ng-click="showMobileNav = !showMobileNav">
 					<i class="fa fa-bars"></i>
 				</md-button>
