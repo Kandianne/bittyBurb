@@ -13,12 +13,20 @@ app.set('view options', {
 	layout: false
 });
 
+
+//==============================DEFINING ROUTES================================================================
+
+var contactRoutes = require('./routes/contactRoutes');
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 app.get('/*', function(req, res) {
 	res.render('index');
 });
+
+
+app.use('/api/contact-form', contactRoutes);
 
 module.exports = app.listen(port, function() {
 	console.log('Example app listening at http://localhost:' + port);

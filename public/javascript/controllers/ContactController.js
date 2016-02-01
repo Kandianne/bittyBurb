@@ -3,7 +3,7 @@
 	angular.module('app')
 	.controller('ContactController', ContactController);
 
-	function ContactController() {
+	function ContactController($mdToast, $animate, $http, $scope) {
 		var vm = this;
 
 	//===================TOAST POSITIONING===============================================	
@@ -26,10 +26,9 @@
 		vm.sendMail = function() {
 
 			var data = ({
+				contactName : vm.contactName,
 				contactEmail : vm.contactEmail,
-				contactMessage : vm.contactMessage,
-				contactStudent : vm.contactStudent,
-				contactParent : vm.contactParent
+				contactMessage : vm.contactMessage
 			});
 
 			console.log(data);
@@ -52,9 +51,8 @@
 			data = null;
 
 			vm.contactEmail = "";
+			vm.contactName = "";
 			vm.contactMessage = "";
-			vm.contactStudent = "";
-			vm.contactParent = "";
 
 		}
 		
