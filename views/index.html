@@ -11,11 +11,10 @@
 </head>
 <body>
 
-<md-content id="nav" layout>
-	<md-toolbar>
+	<md-toolbar id="nav" layout class="md-whiteframe-7dp">
 			<div class="md-toolbar-tools">
 				<div>
-					<md-button ui-sref="Home" class="md-button">
+					<md-button ui-sref="Home" class="md-button" aria-label="Bittyburb">
 						<i class="fa fa-home"></i>&nbsp;Bittyburb
 					</md-button>
 				</div>
@@ -23,11 +22,14 @@
 <!-- 				<md-button ui-sref="Home">
 					About
 				</md-button> -->
-				<md-button ui-sref="Survey">
+				<md-button ui-sref="Survey" class="regNav">
 					Survey
 				</md-button>
-				<md-button ui-sref="Contact">
-					Contact Us
+				<md-button ui-sref="Contact" class="regNav">
+					Contact
+				</md-button>
+				<md-button id="mobileNavToggle" class="md-button-icon" aria-label="Mobile Nav" ng-click="showMobileNav = !showMobileNav">
+					<i class="fa fa-bars"></i>
 				</md-button>
 				<!-- <md-button ui-sref="Invest">
 					Invest
@@ -37,7 +39,14 @@
 				</md-button> -->
 			</div>
 	</md-toolbar>
-</md-content>
+		<div id="mobileNav" ng-show="showMobileNav">
+				<md-button ui-sref="Survey" ng-click="showMobileNav = !showMobileNav">
+					Survey
+				</md-button>
+				<md-button ui-sref="Contact" ng-click="showMobileNav = !showMobileNav">
+					Contact
+				</md-button>
+		</div>
 
 <footer>
 	<md-toolbar>
