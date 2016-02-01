@@ -8,7 +8,6 @@
 		vm.title = 'Bittyburb';
 
 		$scope.isCurrentPath = function (path) {
-			console.log("we getting here");
 			return $location.path() == path;
 		};
 	}
