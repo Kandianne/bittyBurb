@@ -27,8 +27,8 @@ var transporter = nodemailer.createTransport("SMTP", {
 	service: "Gmail",
 	// service: "Godaddy",
 	auth: {
-		user: env.EMAIL,
-		pass: env.EMAIL_PASS
+		user: process.env.EMAIL || env.EMAIL,
+		pass: process.env.EMAIL_PASS || env.EMAIL_PASS
 	}
 }) ;
 
