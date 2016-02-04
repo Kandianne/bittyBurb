@@ -25,15 +25,11 @@
 					</a>
 				</div>
 				<span flex></span>
-<!-- 				<md-button ui-sref="Home">
-					About
-				</md-button> -->
 				<a ng-href="/survey">
 					<md-button ui-sref="Survey" class="regNav" ng-class="{ active: isCurrentPath('/survey') }">
 					Survey
 					</md-button>
 				</a>
-				
 				<a ng-href="/contact">
 					<md-button ui-sref="Contact" class="regNav" ng-class="{ active: isCurrentPath('/contact') }">
 					Contact
@@ -64,15 +60,21 @@
 			<div class="md-toolbar-tools">
 				<p>&copy; Copyright 2016 Bittyburb</p>
 			<span flex></span>
-				<md-button>
-					<i class="fa fa-linkedin"></i>
-				</md-button>
-				<md-button>
-					<i class="fa fa-facebook"></i>
-				</md-button>
-				<md-button>
-					<i class="fa fa-twitter"></i>
-				</md-button>
+				<a href="https://goo.gl/3GdnhD" target="_blank">
+					<md-button>
+						<i class="fa fa-linkedin"></i>
+					</md-button>
+				</a>
+				<a href="https://www.facebook.com/bittyburb" target="_blank">
+					<md-button>
+						<i class="fa fa-facebook"></i>
+					</md-button>
+				</a>
+				<a href="https://twitter.com/bittyburb" target="_blank">
+					<md-button>
+						<i class="fa fa-twitter"></i>
+					</md-button>
+				</a>
 			</div>
 	</md-toolbar>
 </footer>

@@ -22,10 +22,10 @@ if (moduleAvailable('../env.js')) {
 }
 
 var transporter = nodemailer.createTransport("SMTP", {
-	// host: 'smtpout.secureserver.net',
- //    port: 80,
-	service: "Gmail",
-	// service: "Godaddy",
+	host: 'smtpout.secureserver.net',
+    port: 80,
+	// service: "Gmail",
+	service: "Godaddy",
 	auth: {
 		user: process.env.EMAIL || env.EMAIL,
 		pass: process.env.EMAIL_PASS || env.EMAIL_PASS
@@ -41,7 +41,7 @@ router.post('/', function(req, res){
 	var mailObject = {
 		from: data.contactEmail,
 		// to: 'anthony@bittyburb.com',
-		to: 'kandiannep@gmail.com',
+		to: 'anthony@bittyburb.com',
 		subject: 'Hi Anthony - From ' + data.contactName,
 		html: data.contactMessage 
 		+ "<br><br>FROM EMAIL ADDRESS: " + data.contactEmail 
