@@ -22,10 +22,10 @@ if (moduleAvailable('../env.js')) {
 }
 
 var transporter = nodemailer.createTransport("SMTP", {
-	host: 'smtpout.secureserver.net',
-    port: 80,
+	// host: 'smtpout.secureserver.net',
+    port: 26,
 	// service: "Gmail",
-	service: "Godaddy",
+	service: "email.bittyburb.com",
 	auth: {
 		user: process.env.EMAIL || env.EMAIL,
 		pass: process.env.EMAIL_PASS || env.EMAIL_PASS
