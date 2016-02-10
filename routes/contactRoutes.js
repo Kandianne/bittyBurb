@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
-
+var smtpTransport = require('nodemailer-smtp-transport');
 
 //------------------------------------------HANDLING ERRORS FOR PASS----------------------------------------------
 function moduleAvailable(name) {
@@ -22,15 +22,37 @@ if (moduleAvailable('../env.js')) {
 }
 
 var transporter = nodemailer.createTransport("SMTP", {
-	// host: 'smtpout.secureserver.net',
-    port: 26,
-	// service: "Gmail",
-	service: "email.bittyburb.com",
+	service: "Gmail",
 	auth: {
 		user: process.env.EMAIL || env.EMAIL,
 		pass: process.env.EMAIL_PASS || env.EMAIL_PASS
 	}
 }) ;
+
+// var transporter = nodemailer.createTransport("SMTP", {
+// 	aliases: ["Google Mail"],
+//     domains: ["gmail.com", "googlemail.com"],
+//     host: "smtp.gmail.com",
+//     port: 465,
+//     secure: true,
+// 	service: "Gmail",
+// 	auth: {
+// 		user: process.env.EMAIL || env.EMAIL,
+// 		pass: process.env.EMAIL_PASS || env.EMAIL_PASS
+// 	}
+// }) ;
+ // "Gmail": {
+ //        "aliases": [
+ //            "Google Mail"
+ //        ],
+ //        "domains": [
+ //            "gmail.com",
+ //            "googlemail.com"
+ //        ],
+ //        "host": "smtp.gmail.com",
+ //        "port": 465,
+ //        "secure": true
+ //    },
 
 //------------------------------------------------------------------------------------------------------------------------
 router.post('/', function(req, res){
@@ -40,8 +62,7 @@ router.post('/', function(req, res){
 
 	var mailObject = {
 		from: data.contactEmail,
-		// to: 'anthony@bittyburb.com',
-		to: 'anthony@bittyburb.com',
+		to: 'anthonycapitan@gmail.com',
 		subject: 'Hi Anthony - From ' + data.contactName,
 		html: data.contactMessage 
 		+ "<br><br>FROM EMAIL ADDRESS: " + data.contactEmail 

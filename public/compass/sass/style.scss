@@ -22,8 +22,11 @@ body, html {
 	sup {
 	font-size: .3em;
 	}
-	h1, h5 {
+	h1, h5, h2, h4 {
 		text-align: center;
+	}
+	h2 {
+		margin: 2em auto 1em auto;
 	}
 	h5 {
 		margin-top: -1.6em;
@@ -87,12 +90,6 @@ footer {
 //==============================SURVEY PAGE============================================
 
 #survey {
-	h2, h4 {
-		text-align: center;
-	}
-	h2 {
-		margin: 2em auto 1em auto;
-	}
 	p {
 		margin: 1em auto;
 		width: 60%;
@@ -109,21 +106,27 @@ footer {
 		margin: .6em auto;
 		font-size: 3em;
 	}
+	h4 {
+		margin: 5em;
+	}
 	.md-button {
-		padding: 0 2em;
+		padding: 2em;
+		margin: 2em;
 		font-weight: bold;
+	}
+	#surveyContactP {
+		margin-bottom: 5em;
 	}
 }
 
 //==============================CONTACT PAGE============================================
 
 #contact {
-	h2 {
-		text-align: center;
-		margin: 2em auto 1em auto;
-	}
 	a {
 		color: black;
+	}
+	i {
+		font-size: 1.6em;
 	}
 	p {
 		width: 79%;
@@ -151,12 +154,22 @@ footer {
 }
 
 // ===============================================MEDIA QUERIES===============================================
+
+@media only screen and (max-width : 560px)
+{
+	footer p {
+		display: none;
+	}
+	#survey {
+		h4 {
+			margin: 3em;
+		}
+	}
+}
+
 @media only screen and (max-width : 360px)
 {
 	.regNav {
-		display: none;
-	}
-	footer p {
 		display: none;
 	}
 
@@ -176,11 +189,11 @@ footer {
 			font-size: 2em;
 		}
 	}
-}
 
-@media only screen and (max-width : 560px)
-{
-	footer p {
-		display: none;
+	#survey {
+		p {
+			width: 79%;
+		}
 	}
 }
+
