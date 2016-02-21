@@ -54,29 +54,41 @@
 					Contact
 				</md-button>
 		</div>
-
+<!-- <div id="copy" layout-align="center center">
+	<p>&copy; Copyright 2016 Bittyburb</p>
+</div> -->
 <footer>
-	<md-toolbar layout-align="center center">
-			<div class="md-toolbar-tools">
-				<p>&copy; Copyright 2016 Bittyburb</p>
-			<span flex></span>
-				<a href="https://goo.gl/3GdnhD" target="_blank">
-					<md-button>
+	<div id="speedDialButton" class="lock-size" layout="row" layout-align="center center">
+	    <md-fab-speed-dial md-open="isOpen" md-direction="up" ng-class="selectedMode">
+	        <md-fab-trigger>
+	          	<md-button aria-label="menu" class="md-fab md-raised">
+	            	<i class="fa fa-plus"></i>
+	          	</md-button>
+	        </md-fab-trigger>
+	        <md-fab-actions>
+	        	<a href="https://goo.gl/3GdnhD" target="_blank">
+					<md-button class="md-fab md-mini">
 						<i class="fa fa-linkedin"></i>
 					</md-button>
 				</a>
-				<a href="https://www.facebook.com/bittyburb" target="_blank">
-					<md-button>
+	          	<a href="https://www.facebook.com/bittyburb" target="_blank">
+					<md-button class="md-fab md-mini">
 						<i class="fa fa-facebook"></i>
 					</md-button>
 				</a>
-				<a href="https://twitter.com/bittyburb" target="_blank">
-					<md-button>
+	          	<a href="https://twitter.com/bittyburb" target="_blank">
+					<md-button class="md-fab md-mini">
 						<i class="fa fa-twitter"></i>
 					</md-button>
 				</a>
-			</div>
-	</md-toolbar>
+				<a href="mailto:anthony@bittyburb.com?Subject=Hi%20Anthony" target="_top">
+					<md-button class="md-fab md-mini">
+						<i class="fa fa-envelope"></i>
+					</md-button>
+				</a>
+	        </md-fab-actions>
+	    </md-fab-speed-dial>
+    </div>
 </footer>
 
 	<ui-view></ui-view>

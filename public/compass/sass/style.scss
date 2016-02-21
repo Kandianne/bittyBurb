@@ -1,9 +1,10 @@
 $primary-color : #000;
 $secondary-color : #5ba63d;
-$accentStandOut-color: #e79d03;
+$accentStandOut-color: #fdff79;
 $accentStandOutTwo-color: #f6d727;
 $standard-color: #000;
 $nonStandout-color: #fff;
+$bitty-blue: #3c5d8e;
 
 //==================GRADIENT BACKGROUND VARIABLES===============================
 $safari-gradient: -webkit-linear-gradient(left, #237a2b, #5ba63d, #237a2b);
@@ -46,77 +47,136 @@ md-input-container label {
 	border-bottom: 2px solid white; 
 }
 
-footer {
-	width: 100%;
+#copy {
 	position: fixed;
-	bottom: 0;
-	z-index: 1;
+	bottom: 3.3em;
+	right: 0;
+	text-align: center;
 	p {
-		font-size: .7em;
+		font-size: .9em;
 	}
 }
+
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	a {
+		color: $bitty-blue;
+	}
+	.md-button.md-fab {
+		background: black;
+		color: $bitty-blue;
+		i {
+			font-size: 1.3em;
+		}
+	}
+	.md-button.md-fab.md-mini:hover {
+		background: $bitty-blue;
+		color: black;
+		i {
+			font-size: 1.3em;
+		}
+	}
+}
+
+
 
 //==============================NAVIGATION============================================
 
 #navLogo {
-	width: 30px;
+	width: 57px;
 	margin: auto;
 }
 
 //==============================HOME ABOUT============================================
 #homeLogo {
 	text-align: center;
-	margin-top: 1.7em;
 	img {
 		width: 260px;
+		margin-top: 1.9em;
 	}
 }
 
 #aboutHome {
-	margin-bottom: 7em;
+	margin-bottom: 13em;
 	h1 {
 		margin-top: 10px;
 	}
 	p {
 		margin: 1em auto;
-		padding: 0 2em;
+		text-align: justify;
+		border-bottom: 1px solid black;
 	}
 	a {
 		font-weight: bold;
-		color: black;
+		color: $bitty-blue;
 	}
 }
+
+#mainInfo {
+	width: 70%;
+	margin: auto;
+}
+
+.p1, .p3 {
+	padding: 1em 0;
+	margin: 1em;
+	img {
+		width: 300px;
+		float: left;
+		margin-right: 1em;
+		border: 1px solid black;
+	}
+} 
+
+.p2 {
+	padding: 1em 0;
+	text-align: justify;
+	margin: 1em;
+	img {
+		width: 300px;
+		float: right;
+		margin-left: 1em;
+		border: 1px solid black;
+	}
+}
+
 
 //==============================SURVEY PAGE============================================
 
 #survey {
 	p {
+		padding: 1em;
 		margin: 1em auto;
 		width: 60%;
+		// border-bottom: 1px solid black;
 	}
 	a {
 		font-weight: bold;
-		color: black;
+		color: $bitty-blue;
 	}
 	div {
 		text-align: center;
 		margin: auto;
 	}
-	i {
-		margin: .6em auto;
-		font-size: 3em;
-	}
-	h4 {
-		margin: 5em;
-	}
 	.md-button {
-		padding: 2em;
-		margin: 2em;
+		padding: 1em;
+		top: 39%;
+		left: 1%;
+		margin: auto;
 		font-weight: bold;
 	}
 	#surveyContactP {
 		margin-bottom: 5em;
 	}
+}
+
+#surveyCta {
+	border: 1px solid black;
+	width: 50%;
+	height: 300px;
+	background: url("http://tinyhousetalk.com/wp-content/uploads/200-Sq.-Ft.-Off-Grid-Tiny-House-001.jpg") no-repeat center top;
 }
 
 //==============================CONTACT PAGE============================================
@@ -126,7 +186,7 @@ footer {
 		color: black;
 	}
 	i {
-		font-size: 1.6em;
+		font-size: 1.3em;
 	}
 	p {
 		width: 79%;
@@ -155,6 +215,18 @@ footer {
 
 // ===============================================MEDIA QUERIES===============================================
 
+@media only screen and (max-width : 1060px)
+{
+ 	#mainInfo {
+		width: 90%;
+	}
+	#survey {
+		p {
+			width: 90%;
+		}
+	}
+}
+
 @media only screen and (max-width : 560px)
 {
 	footer p {
@@ -164,6 +236,18 @@ footer {
 		h4 {
 			margin: 3em;
 		}
+	}
+	.p1, .p3, .p2 {
+		padding: 1em;
+		margin: auto;
+		img {
+			width: 100%;
+			float: none;
+			margin: .6em auto;
+		}
+	} 
+	#surveyCta {
+		width: 90%;
 	}
 }
 

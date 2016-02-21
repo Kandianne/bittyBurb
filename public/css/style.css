@@ -1,203 +1,296 @@
-/* line 16, ../compass/sass/style.scss */
+/* line 17, ../compass/sass/style.scss */
 body, html {
   color: #000;
   font-family: 'Merriweather Sans', sans-serif;
 }
-/* line 19, ../compass/sass/style.scss */
+/* line 20, ../compass/sass/style.scss */
 body a, html a {
   text-decoration: none;
 }
-/* line 22, ../compass/sass/style.scss */
+/* line 23, ../compass/sass/style.scss */
 body sup, html sup {
   font-size: .3em;
 }
-/* line 25, ../compass/sass/style.scss */
+/* line 26, ../compass/sass/style.scss */
 body h1, body h5, body h2, body h4, html h1, html h5, html h2, html h4 {
   text-align: center;
 }
-/* line 28, ../compass/sass/style.scss */
+/* line 29, ../compass/sass/style.scss */
 body h2, html h2 {
   margin: 2em auto 1em auto;
 }
-/* line 31, ../compass/sass/style.scss */
+/* line 32, ../compass/sass/style.scss */
 body h5, html h5 {
   margin-top: -1.6em;
 }
 
-/* line 36, ../compass/sass/style.scss */
+/* line 37, ../compass/sass/style.scss */
 md-input-container label {
   color: black;
 }
 
-/* line 41, ../compass/sass/style.scss */
+/* line 42, ../compass/sass/style.scss */
 .md-toolbar-tools {
   background: black;
 }
 
-/* line 45, ../compass/sass/style.scss */
+/* line 46, ../compass/sass/style.scss */
 .active {
   border-bottom: 2px solid white;
 }
 
-/* line 49, ../compass/sass/style.scss */
-footer {
-  width: 100%;
+/* line 50, ../compass/sass/style.scss */
+#copy {
   position: fixed;
-  bottom: 0;
-  z-index: 1;
+  bottom: 3.3em;
+  right: 0;
+  text-align: center;
 }
-/* line 54, ../compass/sass/style.scss */
-footer p {
-  font-size: .7em;
+/* line 55, ../compass/sass/style.scss */
+#copy p {
+  font-size: .9em;
 }
 
-/* line 61, ../compass/sass/style.scss */
+/* line 60, ../compass/sass/style.scss */
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+/* line 64, ../compass/sass/style.scss */
+footer a {
+  color: #3c5d8e;
+}
+/* line 67, ../compass/sass/style.scss */
+footer .md-button.md-fab {
+  background: black;
+  color: #3c5d8e;
+}
+/* line 70, ../compass/sass/style.scss */
+footer .md-button.md-fab i {
+  font-size: 1.3em;
+}
+/* line 74, ../compass/sass/style.scss */
+footer .md-button.md-fab.md-mini:hover {
+  background: #3c5d8e;
+  color: black;
+}
+/* line 77, ../compass/sass/style.scss */
+footer .md-button.md-fab.md-mini:hover i {
+  font-size: 1.3em;
+}
+
+/* line 87, ../compass/sass/style.scss */
 #navLogo {
-  width: 30px;
+  width: 57px;
   margin: auto;
 }
 
-/* line 67, ../compass/sass/style.scss */
+/* line 93, ../compass/sass/style.scss */
 #homeLogo {
   text-align: center;
-  margin-top: 1.7em;
 }
-/* line 70, ../compass/sass/style.scss */
+/* line 95, ../compass/sass/style.scss */
 #homeLogo img {
   width: 260px;
+  margin-top: 1.9em;
 }
 
-/* line 75, ../compass/sass/style.scss */
+/* line 101, ../compass/sass/style.scss */
 #aboutHome {
-  margin-bottom: 7em;
+  margin-bottom: 13em;
 }
-/* line 77, ../compass/sass/style.scss */
+/* line 103, ../compass/sass/style.scss */
 #aboutHome h1 {
   margin-top: 10px;
 }
-/* line 80, ../compass/sass/style.scss */
+/* line 106, ../compass/sass/style.scss */
 #aboutHome p {
   margin: 1em auto;
-  padding: 0 2em;
+  text-align: justify;
+  border-bottom: 1px solid black;
 }
-/* line 84, ../compass/sass/style.scss */
+/* line 111, ../compass/sass/style.scss */
 #aboutHome a {
   font-weight: bold;
-  color: black;
+  color: #3c5d8e;
 }
 
-/* line 93, ../compass/sass/style.scss */
+/* line 117, ../compass/sass/style.scss */
+#mainInfo {
+  width: 70%;
+  margin: auto;
+}
+
+/* line 122, ../compass/sass/style.scss */
+.p1, .p3 {
+  padding: 1em 0;
+  margin: 1em;
+}
+/* line 125, ../compass/sass/style.scss */
+.p1 img, .p3 img {
+  width: 300px;
+  float: left;
+  margin-right: 1em;
+  border: 1px solid black;
+}
+
+/* line 133, ../compass/sass/style.scss */
+.p2 {
+  padding: 1em 0;
+  text-align: justify;
+  margin: 1em;
+}
+/* line 137, ../compass/sass/style.scss */
+.p2 img {
+  width: 300px;
+  float: right;
+  margin-left: 1em;
+  border: 1px solid black;
+}
+
+/* line 149, ../compass/sass/style.scss */
 #survey p {
+  padding: 1em;
   margin: 1em auto;
   width: 60%;
 }
-/* line 97, ../compass/sass/style.scss */
+/* line 155, ../compass/sass/style.scss */
 #survey a {
   font-weight: bold;
-  color: black;
+  color: #3c5d8e;
 }
-/* line 101, ../compass/sass/style.scss */
+/* line 159, ../compass/sass/style.scss */
 #survey div {
   text-align: center;
   margin: auto;
 }
-/* line 105, ../compass/sass/style.scss */
-#survey i {
-  margin: .6em auto;
-  font-size: 3em;
-}
-/* line 109, ../compass/sass/style.scss */
-#survey h4 {
-  margin: 5em;
-}
-/* line 112, ../compass/sass/style.scss */
+/* line 163, ../compass/sass/style.scss */
 #survey .md-button {
-  padding: 2em;
-  margin: 2em;
+  padding: 1em;
+  top: 39%;
+  left: 1%;
+  margin: auto;
   font-weight: bold;
 }
-/* line 117, ../compass/sass/style.scss */
+/* line 170, ../compass/sass/style.scss */
 #survey #surveyContactP {
   margin-bottom: 5em;
 }
 
-/* line 125, ../compass/sass/style.scss */
+/* line 175, ../compass/sass/style.scss */
+#surveyCta {
+  border: 1px solid black;
+  width: 50%;
+  height: 300px;
+  background: url("http://tinyhousetalk.com/wp-content/uploads/200-Sq.-Ft.-Off-Grid-Tiny-House-001.jpg") no-repeat center top;
+}
+
+/* line 185, ../compass/sass/style.scss */
 #contact a {
   color: black;
 }
-/* line 128, ../compass/sass/style.scss */
+/* line 188, ../compass/sass/style.scss */
 #contact i {
-  font-size: 1.6em;
+  font-size: 1.3em;
 }
-/* line 131, ../compass/sass/style.scss */
+/* line 191, ../compass/sass/style.scss */
 #contact p {
   width: 79%;
   margin: 3em auto;
 }
-/* line 135, ../compass/sass/style.scss */
+/* line 195, ../compass/sass/style.scss */
 #contact form {
   width: 60%;
   margin: 2em auto 6em auto;
   padding: 1.6em;
 }
-/* line 139, ../compass/sass/style.scss */
+/* line 199, ../compass/sass/style.scss */
 #contact form h3 {
   text-align: center;
 }
-/* line 143, ../compass/sass/style.scss */
+/* line 203, ../compass/sass/style.scss */
 #contact div {
   text-align: center;
 }
-/* line 146, ../compass/sass/style.scss */
+/* line 206, ../compass/sass/style.scss */
 #contact .md-button {
   margin: auto;
   display: block;
 }
 
-/* line 152, ../compass/sass/style.scss */
+/* line 212, ../compass/sass/style.scss */
 #mobileNav, #mobileNavToggle {
   display: none;
 }
 
+@media only screen and (max-width: 1060px) {
+  /* line 220, ../compass/sass/style.scss */
+  #mainInfo {
+    width: 90%;
+  }
+
+  /* line 224, ../compass/sass/style.scss */
+  #survey p {
+    width: 90%;
+  }
+}
 @media only screen and (max-width: 560px) {
-  /* line 160, ../compass/sass/style.scss */
+  /* line 232, ../compass/sass/style.scss */
   footer p {
     display: none;
   }
 
-  /* line 164, ../compass/sass/style.scss */
+  /* line 236, ../compass/sass/style.scss */
   #survey h4 {
     margin: 3em;
   }
+
+  /* line 240, ../compass/sass/style.scss */
+  .p1, .p3, .p2 {
+    padding: 1em;
+    margin: auto;
+  }
+  /* line 243, ../compass/sass/style.scss */
+  .p1 img, .p3 img, .p2 img {
+    width: 100%;
+    float: none;
+    margin: .6em auto;
+  }
+
+  /* line 249, ../compass/sass/style.scss */
+  #surveyCta {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 360px) {
-  /* line 172, ../compass/sass/style.scss */
+  /* line 256, ../compass/sass/style.scss */
   .regNav {
     display: none;
   }
 
-  /* line 176, ../compass/sass/style.scss */
+  /* line 260, ../compass/sass/style.scss */
   #mobileNav {
     display: inherit;
   }
-  /* line 178, ../compass/sass/style.scss */
+  /* line 262, ../compass/sass/style.scss */
   #mobileNav .md-button {
     display: block;
     border: thin solid black;
   }
 
-  /* line 184, ../compass/sass/style.scss */
+  /* line 268, ../compass/sass/style.scss */
   #mobileNavToggle {
     display: inherit;
     text-align: center;
   }
-  /* line 187, ../compass/sass/style.scss */
+  /* line 271, ../compass/sass/style.scss */
   #mobileNavToggle i {
     width: 100%;
     font-size: 2em;
   }
 
-  /* line 194, ../compass/sass/style.scss */
+  /* line 278, ../compass/sass/style.scss */
   #survey p {
     width: 79%;
   }
