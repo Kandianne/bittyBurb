@@ -22,6 +22,9 @@
 		}).state('Survey', {
 			url: '/survey',
 			templateUrl: '/templates/survey.html'
+		}).state('TakeAction', {
+			url: '/takeaction',
+			templateUrl: '/templates/takeaction.html'
 		});
 		$urlRouterProvider.otherwise('/home');
 		$urlMatcherFactoryProvider.caseInsensitive(true);

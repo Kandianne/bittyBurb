@@ -25,6 +25,11 @@
 					</a>
 				</div>
 				<span flex></span>
+				<a ng-href="/takeaction">
+					<md-button ui-sref="TakeAction" class="regNav" ng-class="{ active: isCurrentPath('/takeaction') }">
+					Take Action
+					</md-button>
+				</a>
 				<a ng-href="/survey">
 					<md-button ui-sref="Survey" class="regNav" ng-class="{ active: isCurrentPath('/survey') }">
 					Survey
