@@ -68,7 +68,7 @@ footer {
 	}
 	.md-button.md-fab {
 		background: black;
-		color: $bitty-blue;
+		color: white;
 		i {
 			font-size: 1.3em;
 		}
@@ -82,12 +82,22 @@ footer {
 	}
 }
 
+.lock-size {
+	.md-raised {
+		background: black;
+		color: white;
+	}
+}
 
+a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]):hover {
+	background: $bitty-blue;
+	color: white;
+}
 
 //==============================NAVIGATION============================================
 
 #navLogo {
-	width: 57px;
+	width: 66px;
 	margin: auto;
 }
 
@@ -95,20 +105,19 @@ footer {
 #homeLogo {
 	text-align: center;
 	img {
-		width: 260px;
+		width: 290px;
 		margin-top: 1.9em;
+		margin-bottom: -2em;
 	}
 }
 
 #aboutHome {
-	margin-bottom: 13em;
 	h1 {
 		margin-top: 10px;
 	}
 	p {
-		margin: 1em auto;
+		margin: auto;
 		text-align: justify;
-		border-bottom: 1px solid black;
 	}
 	a {
 		font-weight: bold;
@@ -119,6 +128,7 @@ footer {
 #mainInfo {
 	width: 70%;
 	margin: auto;
+	margin-bottom: 1.6em;
 }
 
 .p1, .p3 {
@@ -163,7 +173,7 @@ footer {
 		margin: auto;
 	}
 	.md-button {
-		padding: 1em;
+		// padding: 1em;
 		top: 67%;
 		left: 1%;
 		margin: auto;
@@ -172,15 +182,18 @@ footer {
 }
 
 #surveyCta {
-	// border: 1px solid black;
-	width: 50%;
+	width: 60%;
 	height: 300px;
-	background: url("../images/illustration 03 just question mark.jpg") no-repeat center top;
+	background: url("../images/bittyburb-question-mark.jpg") no-repeat center;
+	background-size: 307px 379px;
 }
 
 #threeHouses {
 	text-align: center;
 	margin-bottom: 3em;
+	img {
+		width: 360px;
+	}
 }
 
 //==============================TAKE ACTION PAGE============================================
@@ -253,6 +266,26 @@ footer {
 	footer p {
 		display: none;
 	}
+	.regNav {
+		display: none;
+	}
+
+	#mobileNav {
+		display: inherit;
+		.md-button {
+			display: block;
+			border: thin solid black;
+		}
+	}
+
+	#mobileNavToggle {
+		display: inherit;
+		text-align: center;
+		i {
+			width: 100%;
+			font-size: 2em;
+		}
+	}
 	#survey {
 		h4 {
 			margin: 3em;
@@ -274,27 +307,6 @@ footer {
 
 @media only screen and (max-width : 360px)
 {
-	.regNav {
-		display: none;
-	}
-
-	#mobileNav {
-		display: inherit;
-		.md-button {
-			display: block;
-			border: thin solid black;
-		}
-	}
-
-	#mobileNavToggle {
-		display: inherit;
-		text-align: center;
-		i {
-			width: 100%;
-			font-size: 2em;
-		}
-	}
-
 	#survey {
 		p {
 			width: 79%;

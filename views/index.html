@@ -14,7 +14,7 @@
 	<md-toolbar id="nav" layout class="md-whiteframe-7dp">
 			<div class="md-toolbar-tools">
 				<a ui-sref="Home">
-					<img id="navLogo" src="../images/bittyBurp-logo-kandi.png">
+					<img id="navLogo" src="../images/illustration 04 version 02 - transparent.png">
 				</a>
 				<div>
 					<a ng-href="/home">
@@ -55,6 +55,9 @@
 				<md-button ui-sref="Survey" ng-click="showMobileNav = !showMobileNav">
 					Survey
 				</md-button>
+				<md-button ui-sref="TakeAction" ng-click="showMobileNav = !showMobileNav">
+					Take Action
+				</md-button>
 				<md-button ui-sref="Contact" ng-click="showMobileNav = !showMobileNav">
 					Contact
 				</md-button>
@@ -66,8 +69,8 @@
 	<div id="speedDialButton" class="lock-size" layout="row" layout-align="center center">
 	    <md-fab-speed-dial md-open="isOpen" md-direction="up" ng-class="selectedMode">
 	        <md-fab-trigger>
-	          	<md-button aria-label="menu" class="md-fab md-raised">
-	            	<i class="fa fa-plus"></i>
+	          	<md-button aria-label="menu" class="md-button md-raised">
+	            	Share on Social Media
 	          	</md-button>
 	        </md-fab-trigger>
 	        <md-fab-actions>
