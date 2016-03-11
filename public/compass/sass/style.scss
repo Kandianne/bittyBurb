@@ -283,19 +283,24 @@ a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]
 	.p1, .p3, .p2, #contact p, #threeHouses{
 		padding: 1em;
 		margin: auto;
+		width: 93%;
 		img {
 			width: 100%;
 			float: none;
 			margin: .6em auto;
 		}
 	}
-	#contact, #takeAction, #survey {
+	#contact, #takeAction, #survey, #aboutHome{
 		p {
 			width: 93%;
 		}
 		form {
 			width: 93%;
 		}
+	}
+
+	#mainInfo {
+		width: 100%;
 	}
 	
 	#surveyCta {

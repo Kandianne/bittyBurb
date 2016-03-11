@@ -298,30 +298,36 @@ a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]
   .p1, .p3, .p2, #contact p, #threeHouses {
     padding: 1em;
     margin: auto;
+    width: 93%;
   }
-  /* line 286, ../compass/sass/style.scss */
+  /* line 287, ../compass/sass/style.scss */
   .p1 img, .p3 img, .p2 img, #contact p img, #threeHouses img {
     width: 100%;
     float: none;
     margin: .6em auto;
   }
 
-  /* line 293, ../compass/sass/style.scss */
-  #contact p, #takeAction p, #survey p {
+  /* line 294, ../compass/sass/style.scss */
+  #contact p, #takeAction p, #survey p, #aboutHome p {
     width: 93%;
   }
-  /* line 296, ../compass/sass/style.scss */
-  #contact form, #takeAction form, #survey form {
+  /* line 297, ../compass/sass/style.scss */
+  #contact form, #takeAction form, #survey form, #aboutHome form {
     width: 93%;
   }
 
-  /* line 301, ../compass/sass/style.scss */
+  /* line 302, ../compass/sass/style.scss */
+  #mainInfo {
+    width: 100%;
+  }
+
+  /* line 306, ../compass/sass/style.scss */
   #surveyCta {
     width: 90%;
   }
 }
 @media only screen and (max-width: 360px) {
-  /* line 309, ../compass/sass/style.scss */
+  /* line 314, ../compass/sass/style.scss */
   #survey p {
     width: 79%;
   }
