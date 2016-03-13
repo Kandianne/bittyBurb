@@ -143,7 +143,7 @@ a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]
 	margin: 1em;
 	img {
 		width: 100%;
-		margin-top: 2em;
+		margin: 1em auto;
 	}
 } 
 
@@ -166,8 +166,7 @@ a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]
 		margin: auto;
 	}
 	.md-button {
-		// padding: 1em;
-		top: 67%;
+		top: 63%;
 		left: 1%;
 		margin: auto;
 		font-weight: bold;
@@ -176,7 +175,7 @@ a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]
 
 #surveyCta {
 	width: 60%;
-	height: 530px;
+	height: 453px;
 	background: url("../images/bittyburb-question-mark.jpg") no-repeat center;
     background-size: 500px 570px;
 }
@@ -212,15 +211,15 @@ a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]
 //==============================CONTACT PAGE============================================
 
 #contact {
-	a {
-		color: black;
-	}
 	i {
 		font-size: 1.3em;
 	}
 	p {
 		width: 570px;
-		margin: 3em auto;
+		margin: 1em auto;
+	}
+	h2 {
+		margin-bottom: 2em;
 	}
 	form {
 		width: 560px;
@@ -241,7 +240,10 @@ a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]
 
 .contactCTAS {
 	width: 570px;
-	margin: 2em auto !important;
+	margin: 3em auto !important;
+	a {
+		color: black;
+	}
 }
 
 #mobileNav, #mobileNavToggle {
