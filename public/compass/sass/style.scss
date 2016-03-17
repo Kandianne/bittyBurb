@@ -62,6 +62,10 @@ md-input-container label {
 	}
 }
 
+#spaces {
+	display: none;
+}
+
 footer {
 	position: fixed;
 	bottom: 0;
@@ -176,10 +180,9 @@ a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]
 #surveyCta {
 	width: 60%;
 	height: 453px;
-	background: url("../images/bittyburb-question-mark.jpg") no-repeat center;
+	background: url("../minImages/bittyburb-question-mark.jpg") no-repeat center;
     background-size: 500px 570px;
 }
-
 
 //==============================TAKE ACTION PAGE============================================
 
@@ -211,6 +214,7 @@ a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]
 //==============================CONTACT PAGE============================================
 
 #contact {
+	margin-bottom: 2em;
 	i {
 		font-size: 1.3em;
 	}
@@ -243,7 +247,7 @@ a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]
 
 .contactCTAS {
 	width: 570px;
-	margin: 3em auto !important;
+	margin: 1em auto !important;
 	a {
 		color: black;
 	}
@@ -270,6 +274,10 @@ a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]
 			display: block;
 			border: thin solid black;
 		}
+	}
+
+	#spaces {
+		display: initial;
 	}
 
 	#mobileNavToggle {
