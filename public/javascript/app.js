@@ -5,7 +5,7 @@
 
 	function Config($stateProvider, $urlRouterProvider, $urlMatcherFactoryProvider, $locationProvider) {
 		$stateProvider.state('Home',{
-			url: '/home',
+			url: '/',
 			templateUrl: '/templates/home.html'
 		}).state('About', {
 			url: '/about',
@@ -26,7 +26,7 @@
 			url: '/takeaction',
 			templateUrl: '/templates/takeaction.html'
 		});
-		$urlRouterProvider.otherwise('/home');
+		$urlRouterProvider.otherwise('/');
 		$urlMatcherFactoryProvider.caseInsensitive(true);
 		$urlMatcherFactoryProvider.strictMode(false);
 		$locationProvider.html5Mode(true);
